@@ -1,0 +1,19 @@
+<!--pages/index.wxml-->
+<block class="container">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{imgUrls}}">
+            <swiper-item>
+                <image src="{{item}}" class="slide-image" width="320rpx" height="150rpx" />
+            </swiper-item>
+        </block>
+    </swiper>
+    <view class="news-item-container">
+        <block wx:for="{{article}}">
+        <navigator url="../detail/detail{{item.id}}/detail{{item.id}}?title=detail{{item.id}}">
+            <view class='news-item'>
+                {{item.tittle}}
+            </view>
+        </navigator>
+        </block>
+    </view>
+</block>

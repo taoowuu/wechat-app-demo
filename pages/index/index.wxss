@@ -1,0 +1,15 @@
+/* pages/index.wxss */
+.container {
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 100%;
+}
+
+.news-item {
+    width: 664rpx;
+    height: 133rpx;
+    border: solid;
+    border-color: lightgray;
+    margin: 40rpx;
+    border-radius: 10rpx;
+}
